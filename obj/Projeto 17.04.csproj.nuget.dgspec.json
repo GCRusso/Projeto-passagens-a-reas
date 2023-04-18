@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\T-Gamer\\Desktop\\Exercicios-C-sharp\\Projeto 17.04\\Projeto 17.04.csproj": {}
+    "C:\\Users\\23655858841\\Desktop\\Projeto-passagens-a-reas\\Projeto 17.04.csproj": {}
   },
   "projects": {
-    "C:\\Users\\T-Gamer\\Desktop\\Exercicios-C-sharp\\Projeto 17.04\\Projeto 17.04.csproj": {
+    "C:\\Users\\23655858841\\Desktop\\Projeto-passagens-a-reas\\Projeto 17.04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\T-Gamer\\Desktop\\Exercicios-C-sharp\\Projeto 17.04\\Projeto 17.04.csproj",
+        "projectUniqueName": "C:\\Users\\23655858841\\Desktop\\Projeto-passagens-a-reas\\Projeto 17.04.csproj",
         "projectName": "Projeto 17.04",
-        "projectPath": "C:\\Users\\T-Gamer\\Desktop\\Exercicios-C-sharp\\Projeto 17.04\\Projeto 17.04.csproj",
-        "packagesPath": "C:\\Users\\T-Gamer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\T-Gamer\\Desktop\\Exercicios-C-sharp\\Projeto 17.04\\obj\\",
+        "projectPath": "C:\\Users\\23655858841\\Desktop\\Projeto-passagens-a-reas\\Projeto 17.04.csproj",
+        "packagesPath": "C:\\Users\\23655858841\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\23655858841\\Desktop\\Projeto-passagens-a-reas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\T-Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\23655858841\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

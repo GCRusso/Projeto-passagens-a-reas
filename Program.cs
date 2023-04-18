@@ -1,25 +1,11 @@
-﻿/*Criar uma aplicação para uma agência de turismo, no qual deveremos registrar passagens aéreas com os seguintes dados: Nome do passageiro, Origem, Destino e Data do Voo de 5 passageiros.
-
-Antes de entrar no sistema faça um esquema do qual o usuário só possa acessar o menu se a senha for igual à 123456.
-O sistema deve exibir um menu com as seguintes opções:
-
-1- Cadastrar passagem
-2- Listar Passagens
-0- Sair
-
-
-Ao cadastrar uma passagem ao final o sistema deverá perguntar se gostaria de cadastrar uma nova passagem caso contrário voltar ao menu anterior(S/N).
-
-
-1- acesso ao sistema SENHA
-2- cadastrar nome,origem, destino e data 5 passageiros
-3- menu
-4- cadastrar uma nova passagem? ou nao.*/
-
-
-Console.WriteLine($"------Bem Vindo a Russo's AirLines------");
+﻿//variaveis
+string[] nome = new string[5];
+string[] origem = new string[5];
+string[] destino = new string[5];
+string[] data = new string[5];
 
 //Senha para acesso ao app
+Console.WriteLine($"------Bem Vindo a AirLines Senai------");
 Console.WriteLine($"Digite a senha: ");
 string senha = Console.ReadLine();
 
@@ -28,32 +14,92 @@ while (senha != "123456")
     Console.WriteLine($"Tente novamente: ");
     senha = Console.ReadLine();
 }
-Console.WriteLine($"Acesso Liberado! ");
+Console.WriteLine($"Acesso Liberado! Aperte ENTER para continuar. ");
+string escolha = Console.ReadLine();
+
+do
+{
+
+    Console.WriteLine($"Menu inicial");
+    Console.WriteLine($"Selecione uma opcao:");
+    Console.WriteLine($"[1] - cadastro");
+    Console.WriteLine($"[2] - Lista de Cadastro");
+    Console.WriteLine($"[0] - Sair");
+
+    escolha = Console.ReadLine();
+
+    switch (escolha)
+    {
+        case "1":
+            string resposta;
+            do
+            {
+                for (var i = 0; i < 5; i++)
+                {
+                    Console.WriteLine($"Informe os dados do {i + 1}º passageiro:");
+                    Console.WriteLine($"Informe o nome: ");
+                    nome[i] = Console.ReadLine();
+                    Console.WriteLine($"Informe a origem: ");
+                    origem[i] = Console.ReadLine();
+                    Console.WriteLine($"Informe o destino: ");
+                    destino[i] = Console.ReadLine();
+                    Console.WriteLine($"Informe a data: ");
+                    data[i] = Console.ReadLine();
+                }
+
+                Console.WriteLine($"Gostaria de cadastrar novas passagens S/N?: ");
+                resposta = Console.ReadLine().ToLower();
+
+            } while (resposta == "s");
+
+            break;
+
+        case "2":
+            for (var i = 0; i < 5; i++)
+            {
+                Console.WriteLine(@$"
+        Passageiros e passagens
+
+        Nome: {nome[i]}
+        Origem:{origem[i]}
+        Destino:{destino[i]}
+        Data:{data[i]}
+
+        ");
+            }
+            break;
+
+        case "0":
+            Console.WriteLine($"Finalizado o programa, Obrigado!");
+
+            break;
+
+        default:
+            Console.WriteLine($"Esta opcao nao existe!");
+
+            break;
+    }
+} while (escolha != "0");
+//menu opcao
+
+
+
+
+
+
+
 //fim senha de acesso
 
 
 
-Console.WriteLine(@$"
+
+
+/*Console.WriteLine(@$"
 -----Menu-----
 1- Cadastrar passagem
 2- Listar passagens
 0- Sair");
 int menu = int.Parse(Console.ReadLine());
-
-
-//quantidade de passageiros para embarcar no voô
-Console.WriteLine($"Quanto passageiros vao embarcar?");
-
-int quantidadePassageiros = int.Parse(Console.ReadLine());
-
-//static void formularioCadastro(){
-
-string[] nome = new string[quantidadePassageiros];
-string[] origem = new string[quantidadePassageiros];
-string[] destino = new string[quantidadePassageiros];
-string[] data = new string[quantidadePassageiros];
-
-
 
 
 switch (menu)
@@ -114,24 +160,6 @@ switch (menu)
 
         break;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     case 2:
 
         Console.WriteLine("Listagem de passagens:");
@@ -146,39 +174,16 @@ switch (menu)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     case 0:
         Console.WriteLine("Obrigado por utilizar nosso sistema!");
         break;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     default:
+    while(true)
+    {
+
         do
         {
             Console.WriteLine($"Você informou um número inexistente, favor tente novamente: ");
@@ -235,9 +240,11 @@ switch (menu)
 2- Listar passagens
 0- Sair");
             menu = int.Parse(Console.ReadLine());
-        }
+    }
 
+        }
         break;
 
 }
 
+*/
